@@ -1,4 +1,4 @@
-/* Basic Layout */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,7 +11,6 @@ body {
   flex-direction: row;
 }
 
-/* Navbar styles */
 #navbar {
   position: fixed;
   top: 0;
@@ -44,7 +43,6 @@ body {
   background-color: #ddd;
 }
 
-/* Main Content */
 .content {
   margin-left: 250px;
   padding: 20px;
@@ -68,7 +66,6 @@ code {
   font-family: Consolas, monospace;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
   #navbar {
     position: relative;
@@ -80,3 +77,4 @@ code {
     margin-left: 0;
   }
 }
+
