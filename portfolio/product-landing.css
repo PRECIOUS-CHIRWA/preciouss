@@ -57,6 +57,7 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 8%;
 }
 
 .btn:hover {
