@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>freeCodeCamp Survey Form</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey-form.css">
 </head>
 
 <body>
-  <main>
+  <main class="container">
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-      <em>Thank you for taking the time to help us improve the platform.</em>
-    </p>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform.</em></p>
 
     <form id="survey-form" method="post">
+
       <!-- Personal Info -->
       <fieldset>
-        <label id="name-label" for="name">Name
+        <legend>Personal Information</legend>
+        <label for="name">Name
           <input type="text" id="name" name="name" required placeholder="Enter your name">
         </label>
 
-        <label id="email-label" for="email">Email
+        <label for="email">Email
           <input type="email" id="email" name="email" required placeholder="Enter your email">
         </label>
 
-        <label id="number-label" for="number">Age (Optional)
+        <label for="number">Age (Optional)
           <input type="number" id="number" name="age" min="13" max="120" placeholder="Age">
         </label>
       </fieldset>
 
       <!-- Role -->
       <fieldset>
+        <legend>Current Role</legend>
         <label for="dropdown">Which option best describes your current role?</label>
         <select id="dropdown" name="role" required>
           <option disabled selected value="">Select current role</option>
@@ -46,19 +47,15 @@
       <!-- Recommendation -->
       <fieldset>
         <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <label>
-          <input type="radio" name="recommend" value="Definitely" required> Definitely
-        </label>
-        <label>
-          <input type="radio" name="recommend" value="Maybe"> Maybe
-        </label>
-        <label>
-          <input type="radio" name="recommend" value="Not sure"> Not sure
-        </label>
+
+        <label><input type="radio" name="recommend" value="Definitely" required> Definitely</label>
+        <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="Not sure"> Not sure</label>
       </fieldset>
 
       <!-- Favorite Feature -->
       <fieldset>
+        <legend>Favorite Feature</legend>
         <label for="feature">What is your favorite feature of freeCodeCamp?</label>
         <select id="feature" name="feature" required>
           <option disabled selected value="">Select an option</option>
@@ -72,6 +69,7 @@
       <!-- Improvements -->
       <fieldset>
         <legend>What would you like to see improved? (Check all that apply)</legend>
+
         <label><input type="checkbox" name="improve" value="Front-end Projects"> Front-end Projects</label>
         <label><input type="checkbox" name="improve" value="Back-end Projects"> Back-end Projects</label>
         <label><input type="checkbox" name="improve" value="Data Visualization"> Data Visualization</label>
@@ -86,6 +84,7 @@
 
       <!-- Comments -->
       <fieldset>
+        <legend>Additional Comments</legend>
         <label for="comments">Any comments or suggestions?</label>
         <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
       </fieldset>
