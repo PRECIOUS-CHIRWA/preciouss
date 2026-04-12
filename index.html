@@ -3,69 +3,320 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Precious Chirwa - Portfolio</title>
-  <link rel="stylesheet" href="./portfolio/portfolio.css">
-
+  <title>Precious Chirwa | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
 </head>
-
 <body>
-  <header>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">Welcome</a></li>
+  <header class="site-header">
+    <nav id="navbar" class="nav-shell" aria-label="Primary">
+      <a class="brand-mark" href="#welcome-section">Precious Chirwa</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#beyond">Beyond the Code</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a></li>
+        <li><a id="profile-link" href="https://github.com/PRECIOUS-CHIRWA" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="welcome-section">
-    <h1>Hi, I am Precious, <em>a web developer</em>.</h1>
-    <h3>Welcome to my portfolio.</h3>
-  </section>
+  <main>
+    <section id="welcome-section" class="hero-section">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
 
-  <section id="projects">
-    <h2>PROJECTS</h2>
+      <div class="hero-copy panel">
+        <p class="section-kicker">Responsive Web Designer</p>
+        <h1>Hi, I am Precious, <em>a web developer</em>.</h1>
+        <h2>Welcome to my portfolio.</h2>
+        <p class="hero-text">
+          Crafting beautiful, accessible digital experiences with modern web technologies.
+        </p>
 
-    <div class="projects-grid">
-      <div class="project-tile">
-        <h3>Survey Form</h3>
-        <a href="./portfolio/survey-form.html" target="_blank">View project</a>
+        <div class="button-row">
+          <a class="button button-primary" href="#projects">View My Work</a>
+          <a class="button button-secondary" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="section-intro">
+        <p class="section-kicker">About Me</p>
+        <h2 class="section-heading">Designing websites that feel intuitive, thoughtful, and alive.</h2>
+        <p class="section-copy">
+          I'm a passionate web designer dedicated to creating intuitive and visually stunning websites. With a
+          Responsive Web Design certification from freeCodeCamp.org, I combine design principles with technical
+          expertise to build responsive, user-friendly digital experiences that work beautifully across all devices.
+        </p>
       </div>
 
-      <div class="project-tile">
-        <h3>Tribute Page</h3>
-        <a href="./portfolio/tribute-page.html" target="_blank">View project</a>
+      <div class="feature-grid">
+        <article class="feature-card panel">
+          <span class="card-badge">01</span>
+          <h3>Clean Code</h3>
+          <p>Writing semantic, maintainable code following industry best practices and modern standards.</p>
+        </article>
+
+        <article class="feature-card panel">
+          <span class="card-badge">02</span>
+          <h3>Design Focus</h3>
+          <p>Creating beautiful interfaces with attention to typography, color, and user experience.</p>
+        </article>
+
+        <article class="feature-card panel">
+          <span class="card-badge">03</span>
+          <h3>Certified</h3>
+          <p>Responsive Web Design certified through freeCodeCamp.org's comprehensive curriculum.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="section-intro">
+        <p class="section-kicker">Projects &amp; Certification</p>
+        <h2 class="section-heading">Projects completed as part of my Responsive Web Design certification.</h2>
+        <p class="section-copy">
+          Each project helped me strengthen accessibility, layout, and responsive design skills through practical,
+          hands-on development.
+        </p>
       </div>
 
-      <div class="project-tile">
-        <h3>Technical Documentation Page</h3>
-        <a href="./portfolio/technical-documentation.html" target="_blank">View project</a>
+      <div class="project-grid">
+        <article class="project-card panel">
+          <p class="project-type">Responsive Web Design</p>
+          <h3>Survey Form</h3>
+          <p>
+            An accessible survey form demonstrating form elements, validation, and responsive design principles for
+            optimal user experience.
+          </p>
+          <ul class="tag-list" aria-label="Survey Form skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Forms</li>
+          </ul>
+          <a class="button button-primary" href="./survey-form.html">View Project</a>
+        </article>
+
+        <article class="project-card panel">
+          <p class="project-type">Responsive Web Design</p>
+          <h3>Tribute Page</h3>
+          <p>
+            A responsive tribute page showcasing HTML5 semantic structure and CSS styling techniques to honor an
+            influential figure.
+          </p>
+          <ul class="tag-list" aria-label="Tribute Page skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive</li>
+          </ul>
+          <a class="button button-primary" href="./tribute-page.html">View Project</a>
+        </article>
+
+        <article class="project-card panel">
+          <p class="project-type">Responsive Web Design</p>
+          <h3>Technical Documentation Page</h3>
+          <p>
+            A comprehensive technical documentation page with fixed navigation, organized content sections, and
+            mobile-first responsive design.
+          </p>
+          <ul class="tag-list" aria-label="Technical Documentation Page skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Navigation</li>
+          </ul>
+          <a class="button button-primary" href="./technical-documentation.html">View Project</a>
+        </article>
+
+        <article class="project-card panel">
+          <p class="project-type">Responsive Web Design</p>
+          <h3>Product Landing Page</h3>
+          <p>
+            A modern product landing page featuring flexbox layouts, media queries, and engaging visual design to
+            showcase products effectively.
+          </p>
+          <ul class="tag-list" aria-label="Product Landing Page skills">
+            <li>Flexbox</li>
+            <li>CSS Grid</li>
+            <li>Responsive</li>
+          </ul>
+          <a class="button button-primary" href="./product-landing.html">View Project</a>
+        </article>
+
+        <article class="project-card panel">
+          <p class="project-type">Responsive Web Design</p>
+          <h3>Playing Cards</h3>
+          <p>
+            An interactive playing cards project showcasing CSS animations, flexbox layouts, and responsive design for
+            an engaging card game interface.
+          </p>
+          <ul class="tag-list" aria-label="Playing Cards skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Animations</li>
+          </ul>
+          <a class="button button-primary" href="./playing-cards.html">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="beyond" class="content-section">
+      <div class="section-intro">
+        <p class="section-kicker">Beyond the Code</p>
+        <h2 class="section-heading">When I'm not designing websites, I enjoy creative and mindful activities.</h2>
       </div>
 
-      <div class="project-tile">
-        <h3>Product Landing Page</h3>
-        <a href="./portfolio/product-landing.html" target="_blank">View project</a>
+      <div class="hobby-grid">
+        <article class="hobby-card panel">
+          <span class="card-badge">Grow</span>
+          <h3>Gardening</h3>
+          <p>Cultivating plants and creating peaceful outdoor spaces brings me joy and teaches patience.</p>
+        </article>
+
+        <article class="hobby-card panel">
+          <span class="card-badge">Write</span>
+          <h3>Writing</h3>
+          <p>Crafting poetry and creative non-fiction, expressing ideas and emotions through carefully chosen words.</p>
+        </article>
+
+        <article class="hobby-card panel">
+          <span class="card-badge">Read</span>
+          <h3>Reading</h3>
+          <p>
+            Reading diversely across fiction, poetry, and non-fiction to learn, grow, and expand my knowledge and
+            horizons. I'm curious and love researching topics that interest me.
+          </p>
+        </article>
+
+        <article class="hobby-card panel">
+          <span class="card-badge">Shoot</span>
+          <h3>Photography</h3>
+          <p>Capturing nature and its vast beauty through the lens, preserving moments of natural wonder.</p>
+        </article>
       </div>
 
-      <div class="project-tile">
-        <h3>Playing Cards</h3>
-        <a href="./portfolio/playing-cards.html" target="_blank">View project</a>
+      <div class="showcase-grid">
+        <article class="showcase-card panel">
+          <div class="section-intro compact">
+            <p class="section-kicker">Nature Photography</p>
+            <h3 class="showcase-title">A glimpse into the vast beauty of nature through my lens.</h3>
+          </div>
+
+          <div class="photo-grid">
+            <figure class="photo-card">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.07.58-tCS2ROgYM5FW2qpVvEi2Xc58XMrY34.jpeg" alt="Golden sunset with silhouetted trees" loading="lazy" />
+              <figcaption>Golden sunset with silhouetted trees</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.20%20%281%29-fMmg8TLz82sqkYSaKoPOgNnS9Uukwl.jpeg" alt="Delicate pink peony flower" loading="lazy" />
+              <figcaption>Delicate pink peony flower</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.52-smXhCtDruioQpACyHK6j8x2KjALSQB.jpeg" alt="Brown grasshopper on grass blades" loading="lazy" />
+              <figcaption>Brown grasshopper on grass blades</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/siku%20Dawning-CSuCdsu7qyV95dYFysAmViL9o9CtaK.jpg" alt="Dawn sunrise with golden clouds" loading="lazy" />
+              <figcaption>Dawn sunrise with golden clouds</figcaption>
+            </figure>
+          </div>
+
+          <details class="photo-gallery-more">
+            <summary>View all (12)</summary>
+            <div class="photo-grid photo-grid-expanded">
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Siku%20life-d9rTaqEFFtvFw13ktlBTwqhSPQRSUH.jpg" alt="Rural landscape at sunrise with figures" loading="lazy" />
+                <figcaption>Rural landscape at sunrise with figures</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.29-FP4bWzp6uO390OrKJsTmEJjhFar83c.jpeg" alt="White flower held in hand" loading="lazy" />
+                <figcaption>White flower held in hand</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.50-bpU5JYpJCzKt9yhYZdeiiUZqgHXSQW.jpeg" alt="Blue river flowing through yellow flowers" loading="lazy" />
+                <figcaption>Blue river flowing through yellow flowers</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.51%20%282%29-wfWmn9da4x0jEHXi8Q8jsDWx5xp1EN.jpeg" alt="Grasshopper on green leafy plants" loading="lazy" />
+                <figcaption>Grasshopper on green leafy plants</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.07.50-pfgQeKRsUP3ujcc6LhtZTWt1kVMc0z.jpeg" alt="Sunset with trees and light rays" loading="lazy" />
+                <figcaption>Sunset with trees and light rays</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.07.53-PUQ1nZDx67KKSWDHullM9zDEp1aBeb.jpeg" alt="Dramatic sunset with silhouetted landscape" loading="lazy" />
+                <figcaption>Dramatic sunset with silhouetted landscape</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dawn%20siku-BZOK9mnTwrqjrR81BleC5YaQ1cUNHc.jpg" alt="Morning sunrise with golden sky" loading="lazy" />
+                <figcaption>Morning sunrise with golden sky</figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-04%20at%2014.18.49-Quner9AZYsv4L2krqICDMrM8cfQarH.jpeg" alt="Green mangoes hanging from tree" loading="lazy" />
+                <figcaption>Green mangoes hanging from tree</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+
+        <article class="showcase-card panel">
+          <div class="section-intro compact">
+            <p class="section-kicker">Written Works</p>
+            <h3 class="showcase-title">Poetry and creative expressions.</h3>
+          </div>
+
+          <article class="poem-card">
+            <h4>Discovery &amp; Learning</h4>
+            <p>We learn to discover, and discover to learn,</p>
+            <p>The cycle of growth, where knowledge yearns.</p>
+            <p>With each new finding, our minds expand,</p>
+            <p>And understanding dawns, like a sunrise in hand.</p>
+          </article>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:preciouschirwa798@gmail.com">preciouschirwa798@gmail.com</a></p>
-    <p>LinkedIn:<a href="https://www.linkedin.com/in/precious-chirwa-037645228" target="_blank">
-  <i class="fab fa-linkedin"></i>
-</a></p>
-  </section>
+    <section id="contact" class="content-section">
+      <div class="contact-card panel">
+        <div class="section-intro compact">
+          <p class="section-kicker">Let's Connect</p>
+          <h2 class="section-heading">I'm always open to discussing new projects, creative ideas, or collaboration.</h2>
+        </div>
 
-  <footer>
-    <p>© 2025 Precious Chirwa</p>
+        <div class="contact-grid">
+          <div>
+            <h3>Get In Touch</h3>
+            <a class="contact-link" href="mailto:preciouschirwa798@gmail.com">preciouschirwa798@gmail.com</a>
+          </div>
+
+          <div>
+            <h3>Follow Me</h3>
+            <div class="button-row">
+              <a class="button button-secondary" href="https://github.com/PRECIOUS-CHIRWA" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/precious-chirwa-037645228" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Precious Chirwa. All rights reserved.</p>
   </footer>
 </body>
 </html>
