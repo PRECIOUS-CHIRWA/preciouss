@@ -31,6 +31,7 @@ body {
   color: var(--text);
   font-family: "Manrope", sans-serif;
   background: var(--bg);
+  line-height: 1.75em;
 }
 
 body::before {
@@ -137,7 +138,7 @@ main {
 .hero-copy {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 100%;
   border: 0;
 }
 
@@ -189,8 +190,13 @@ main {
   margin: 1.5rem 0 0;
 }
 
+.hero-copy{
+  padding:90px 250px;
+  line-height: 1.75em;
+
+}
 .panel {
-  border: 1px solid var(--line);
+  /*border: 1px solid var(--line); */
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(18, 38, 63, 0.88), rgba(10, 25, 42, 0.92));
   box-shadow: var(--shadow);
@@ -248,7 +254,16 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.section-kicker,
+.section-kicker{
+  line-height: 1.95em;
+  color: var(--text);
+   margin: 0 0 0.8rem;
+  font-size: 1.10rem;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .project-type {
   margin: 0 0 0.8rem;
   font-size: 0.82rem;
@@ -256,6 +271,7 @@ main {
   text-transform: uppercase;
   color: var(--accent);
 }
+
 
 .section-copy {
   margin: 1rem 0 0;
