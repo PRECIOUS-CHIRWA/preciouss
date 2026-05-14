@@ -434,7 +434,7 @@ main {
   font-size: 1.35rem;
 }
 
-.poem-card p {
+.poem-card > p {
   margin: 0.55rem 0;
   color: #e2eff7;
   font-family: "Roboto", serif;
